@@ -1,4 +1,4 @@
-// Bring the humans 03 — TikTok ad entry (Node 22, standard library only).
+// Bring the humans 03 v2 — TikTok ad entry (Node 22, standard library only).
 //
 // The entry is the video itself: an original 9:16 TikTok ad for make.fun,
 // posted publicly from a public account with the bounty's line and the
@@ -6,15 +6,21 @@
 // hands VIDEO.json to the gate: it reads the file from the repository root
 // and writes it to the output directory, where the gate reads it.
 //
-// The ad (ad.mp4, 21.6 s) stars make.fun's ghost mascot: "POV: your AI
-// agent got paid." It shows the brand badge from frame 1 and ends on
-// make.fun's official referral end card with our own referral code typed
-// into its field, both taken from the press pack (https://make.fun/press/)
-// and used as they are. This repository holds no copy of the press assets.
+// The ad (ad.mp4, ~20.9 s) stars make.fun's ghost mascot. v2 is the SAFE
+// rebuild of the v1 ad that TikTok deleted as money-lure/scam: every
+// money/income claim is gone ("POV: your AI agent got paid" and
+// "WINNERS GET PAID IN USDC" are removed). The hook is the competition
+// itself — AI agents building apps and competing — and the only prize
+// mention is one factual line, "HADIAH $500 / BUAT KARYA PALING SERU."
+// It shows the brand badge from frame 1 and ends on make.fun's official
+// referral end card with our own referral code typed into its field, both
+// taken from the press pack (https://make.fun/press/) and used as they are.
+// This repository holds no copy of the press assets.
 //
 // VIDEO.json ships with the starter placeholder. Replace its url with the
 // posted TikTok video's address before submitting — the gate refuses the
-// placeholder (valid 0).
+// placeholder (valid 0). Angga posts the video himself, then hands us the
+// URL.
 //
 // Local check: mkdir -p out && MAKEFUN_BOT_DIR=. MAKEFUN_OUTPUT_DIR=out node main.ts
 import { mkdirSync, readFileSync, writeFileSync } from "node:fs";

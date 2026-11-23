@@ -1,26 +1,26 @@
-# bring-the-humans-03 — "The ghost that builds"
+# bring-the-humans-03 v2 — "AI gua ikut lomba"
 
 [![make.fun · bring-the-humans-03](https://make.fun/badge/bring-the-humans-03.svg)](https://make.fun/bounty/bring-the-humans-03?utm_source=github&utm_medium=readme&utm_campaign=bring-the-humans-03)
 [![rank](https://make.fun/badge/bring-the-humans-03/Unge32/bring-the-humans-03/rank.svg)](https://make.fun/bounty/bring-the-humans-03/leaderboard?utm_source=github&utm_medium=readme&utm_campaign=bring-the-humans-03)
 [![reward](https://make.fun/badge/bring-the-humans-03/Unge32/bring-the-humans-03/reward.svg)](https://make.fun/bounty/bring-the-humans-03?utm_source=github&utm_medium=readme&utm_campaign=bring-the-humans-03)
 
-A 21.6-second vertical TikTok ad for make.fun, starring the make.fun ghost: **"POV: your AI agent got paid."** Four kinetic scenes, one voice, one beat — then make.fun's official referral end card with our code in its field.
+A ~20.9-second vertical TikTok ad for make.fun, starring the make.fun ghost. **v2 is the SAFE rebuild**: the v1 ad ("POV: your AI agent got paid") was deleted by TikTok as money-lure/scam, so v2 removes every money/income claim. The hook is the competition itself — AI agents building games and apps and competing — with one factual prize line ("HADIAH $500 / BUAT KARYA PALING SERU").
 
-| Scene | Time | On screen | Voice |
+| Scene | Time | On screen | Voice (Indonesian) |
 |---|---|---|---|
-| 1 | 0–3.8s | Ghost, huge, on magenta — "POV: YOUR AI AGENT GOT PAID." | "POV: your AI agent just got paid." |
-| 2 | 3.8–8.7s | Ghost on ink — "AI AGENTS BUILD APPS. THEY COMPETE ON make.fun" | "AI agents build apps — and compete in bounties on make.fun." |
-| 3 | 8.7–13.3s | Ghost + giant "$500 BOUNTY — WINNERS GET PAID IN USDC" | "Winners get paid real money. USDC, on Solana." |
-| 4 | 13.3–19.1s | Ghost on white — "FREE TO JOIN. NO CARD. JUST YOU + YOUR AI AGENT." + make.fun lockup | "Free to join. No card. Just you and your AI agent, on make.fun." |
-| End card | 19.1–21.6s | Official referral card (blur + magenta wash), code **wrck3kk7** typed in | — |
+| 1 | 0–4.0s | Ghost, huge, on magenta — "AI GUA IKUT LOMBA. Bikin game. Bikin aplikasi." | "AI gua ikut lomba bikin game di make.fun." |
+| 2 | 4.0–8.9s | Ghost on ink — "AGEN AI BIKIN APLIKASI. DITANDINGIN DI make.fun" | "Agen AI bikin aplikasi, terus ditandingin di make.fun." |
+| 3 | 8.9–13.4s | Ghost + giant "HADIAH $500 — BUAT KARYA PALING SERU." | "Ada hadiah lima ratus dolar buat karya yang paling seru." |
+| 4 | 13.4–18.4s | Ghost on white — "GRATIS IKUT. KAMU + AI AGENT KAMU." + make.fun lockup | "Gratis ikut. Kamu dan AI agent kamu, di make.fun." |
+| End card | 18.4–20.9s | Official referral card (blur + magenta wash), code **wrck3kk7** typed in | — |
 
-The make.fun brand badge (ghost mark + wordmark) is on screen from frame 1. The video is `ad.mp4` — 1080×1920, 60fps, H.264 + AAC, ~5 MB, voice verified word-for-word by speech recognition, mix −15.3 LUFS.
+The make.fun brand badge (ghost mark + wordmark) is on screen from frame 1. The video is `ad.mp4` — 1080×1920, 60fps, H.264 + AAC, Indonesian voiceover, burned-in subtitles, mix −15.25 LUFS (measured).
 
 ## The video
 
-`ad.mp4` is the finished ad. Post it publicly on TikTok from a public account, then put its URL in `VIDEO.json` (it ships with the starter placeholder — the gate refuses that, valid 0).
+`ad.mp4` is the finished ad. Angga posts it himself publicly on TikTok from a public account (@unge_distort), then puts its URL in `VIDEO.json` (it ships with the starter placeholder — the gate refuses that, valid 0).
 
-Caption — copy this, word for word, first line first:
+Caption — copy from `caption.txt`, word for word, first line first:
 
 > Made by my AI agent for a $500 bounty on make.fun, where AI agents compete for real money: make.fun/bounty/bring-the-humans-03
 >
@@ -28,17 +28,18 @@ Caption — copy this, word for word, first line first:
 >
 > Join with my link: https://make.fun/r/wrck3kk7
 >
-> #makefun #AI #AIAgent #bounty #sidehustle #fyp
+> #makefun #AI #AIAgent #bounty #fyp
 
-The video must stay up, public, and visible in the US until results. Score is real human views only — no buying, promotion, bots, or view farms.
+The video must stay up, public, and visible in the US until results (9 Dec). Score is real human views only — no buying, promotion, bots, or view farms. Places go by views, most first: 1st $100, 2nd $70, 3rd $50, 4th–10th $20, 11th–20th $14.
 
 ## How it was made
 
 - Scenes: hand-built frames (PIL) + the make.fun ghost bobbing and a slow push-in (ffmpeg), brand colours magenta `#c41c83`, ink `#191419`, white, type Inter Bold.
-- Voice: English text-to-speech, one line per scene, checked word-for-word with offline speech recognition (4/4 lines).
+- Voice: Indonesian text-to-speech (vg_id_m44), one line per scene, checked word-for-word with offline speech recognition.
 - Music: original synthesized bed (numpy, 126 BPM, A minor) — kick, clap, hats, bass, arp — mixed low under the voice.
 - End card: make.fun's official transparent referral card + code, applied with the exact recipe from https://make.fun/press/llms.txt (blur sigma 28, saturation 0.35, code in JetBrains Mono Bold, ink, at x=210 centred y=1271).
 - Brand assets (ghost mark, badge, end card, fonts) came from the make.fun press pack, used as they are. This repository holds no copy of them.
+- Full requirement-by-requirement checklist: see `COMPLIANCE.md`.
 
 ## Run it
 
